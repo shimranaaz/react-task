@@ -1,0 +1,258 @@
+*{
+  margin: 0;
+  padding: 0;
+ box-sizing: border-box;
+}
+.birthday-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.card {
+  width: 80vw;
+  max-width: 800px;
+  background: rgb(3 3 3 / 60%);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  margin: auto;
+  gap: 20px;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 43px;
+  letter-spacing: 3px;
+  position: relative;
+  font-family: "Dancing Script", cursive;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 366px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  box-shadow: 0 6px 0 white;
+}
+
+.input-fields input {
+  padding: 10px;
+  margin: 5px 0;
+  color: #fff;
+  border-radius: 20px;
+  background: transparent;
+  font-family: "Space Grotesk", sans-serif;
+  border: 2px solid #ccc;
+}
+
+.input-fields input::placeholder {
+  color: #fff;
+}
+
+button {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: auto;
+  height: 55px;
+  font-family: "Space Grotesk", sans-serif;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+}
+
+strong {
+  font-size: 30px;
+  border-bottom: 2px solid;
+  font-family: "Dancing Script", cursive;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+.filter-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.filter-buttons button {
+  background-color: transparent;
+  border: 2px solid #ccc;
+  padding: 0px 20px;
+  cursor: pointer;
+  border-radius: 32px;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.birthday-list {
+  margin-top: 20px;
+  display: flex;
+  width: 508px;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.birthday-item {
+  display: flex;
+  border: 2px solid white;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 350px;
+  flex-direction: column;
+  height: auto;
+  gap: 13px;
+  margin: auto;
+  padding: 20px;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.birthday-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.birthday-item h3 {
+  margin: 0;
+  color: #fff;
+}
+
+.birthday-item p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.btn-hover.color-3 {
+  color: #fff;
+  margin: 7px;
+  background: linear-gradient(135deg, #a8c0ff, #2e1b81);
+  font-family: "Space Grotesk", sans-serif;
+}
+
+input[type="date"] {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 10px;
+  appearance: none;
+}
+
+p.error-message {
+  color: #fff;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    width: 90vw; 
+  }
+
+  .birthday-list {
+    width: 90%; 
+  }
+
+  .input-fields {
+    width: 90%; 
+  }
+}
+
+@media (max-width: 768px) {
+  .birthday-item {
+    width: 180px; 
+    padding: 15px; 
+  }
+
+  .birthday-list {
+    width: 100%; 
+  }
+
+  .card {
+    width: 95vw; 
+  }
+
+  .input-fields {
+    width: 90%; 
+  }
+
+  h2 {
+    font-size: 30px; 
+  }
+
+  button {
+    width: 100%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .birthday-item {
+    width: 150px; 
+    padding: 10px; 
+  }
+
+  .card {
+    padding: 20px; 
+  }
+
+  .input-fields {
+    width: 100%; 
+  }
+
+  h2 {
+    font-size: 24px; 
+  }
+
+  button {
+    width: 100%; 
+    height: 50px;
+  }
+
+  .filter-buttons {
+    flex-direction: column; 
+  }
+
+  .birthday-list {
+    width: 100%; 
+    flex-direction: column; 
+  }
+}
