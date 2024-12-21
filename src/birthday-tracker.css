@@ -85,6 +85,7 @@ p {
   font-size: 18px;
   line-height: 27px;
   color: #fff;
+  margin: 10px;
 }
 
 strong {
@@ -160,9 +161,9 @@ strong {
 
 .btn-hover.color-3 {
   color: #fff;
-  margin: 7px;
   background: linear-gradient(135deg, #a8c0ff, #2e1b81);
   font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 10px;
 }
 
 input[type="date"] {
